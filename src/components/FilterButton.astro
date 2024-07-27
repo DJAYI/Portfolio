@@ -1,0 +1,15 @@
+---
+interface Props {
+  name: string;
+  value: string;
+  active: boolean;
+}
+
+const { name, value, active } = Astro.props;
+---
+
+<button
+  class:list={[`active-${active}`]}
+  class="cursor-pointer hover:bg-slate-500/35 transition text-sm px-3 py-1 bg-slate-500/20 rounded-full"
+  value={value}>{name}</button
+>

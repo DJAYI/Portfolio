@@ -1,0 +1,49 @@
+---
+const NAV_LINKS = [
+  {
+    id: 0,
+    title: "Home",
+    link: "/",
+    icon: "",
+  },
+  {
+    id: 1,
+    title: "Projects",
+    link: "/projects",
+    icon: "",
+  },
+  {
+    id: 2,
+    title: "About me",
+    link: "/about-me",
+    icon: "",
+  },
+  {
+    id: 3,
+    title: "Contact",
+    link: "/contact",
+    icon: "",
+  },
+];
+---
+
+<header class="py-8">
+  <nav>
+    <ul class="flex items-center justify-center gap-x-2">
+      <li></li>
+      {
+        NAV_LINKS.map(({ title, link, icon }) => (
+          <li>
+            <a
+              class="font-semibold px-3 py-2 hover:bg-slate-300 hover:text-black rounded-full transition-[200ms] text-center"
+              href={link}
+            >
+              <span class={icon} />
+              {title}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+</header>

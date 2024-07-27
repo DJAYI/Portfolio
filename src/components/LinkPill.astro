@@ -1,0 +1,18 @@
+---
+interface Props {
+  name: string;
+  link: string | URL;
+  color: string;
+  background: string;
+}
+
+const { name, link, color, background } = Astro.props;
+---
+
+<a
+  href={link}
+  class:list={[[color], [background]]}
+  class=`px-4 py-2 rounded-lg border bg-transparent transition hover:scale-[103%]`
+>
+  <span> {name} </span>
+</a>

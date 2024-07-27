@@ -1,0 +1,83 @@
+---
+//MIDU SI VES ESTO ADOPTAME 😭 ( o minimo contratame ) ;)
+
+import { ViewTransitions } from "astro:transitions";
+import Header from "./sections/Header.astro";
+import Footer from "./sections/Footer.astro";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+
+    <ViewTransitions />
+  </head>
+  <body>
+    <div class="w-full h-full bg-slate-950">
+      <div
+        class="absolute bottom-0 left-[-10%] right-0 top-[10%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(255,0,182,.15),rgba(255,255,255,0))]"
+      >
+      </div><div
+        class="absolute bottom-0 right-[-10%] top-[50%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle_farthest-side,rgba(100,50,252,.15),rgba(255,255,255,0))]"
+      >
+      </div>
+    </div>
+    <Header />
+
+    <div class="relative">
+      <slot />
+    </div>
+
+    <Footer />
+    <style is:global>
+      @import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+      @font-face {
+        font-family: "Baby Cute";
+        src: url(../fonts/Baby-Cute.ttf);
+      }
+      ::-webkit-scrollbar {
+        background: transparent;
+        width: 8px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #222;
+        border-radius: 30px;
+      }
+
+      * {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+      }
+      :root {
+        color-scheme: light dark;
+        --accent: 136, 58, 234;
+        --accent-light: 224, 204, 250;
+        --accent-dark: 49, 10, 101;
+        --accent-gradient: linear-gradient(
+          45deg,
+          rgb(var(--accent)),
+          rgb(var(--accent-light)) 30%,
+          white 60%
+        );
+      }
+      html {
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+      }
+    </style>
+  </body>
+</html>

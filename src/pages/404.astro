@@ -1,0 +1,22 @@
+---
+import LinkButton from "../components/LinkButton.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Page Not Found">
+  <main class="grid h-[80vh] justify-center items-center">
+    <div class="max-w-[800px] text-center">
+      <span class="text-5xl font-bold">404 Page Not Found</span>
+      <p class="my-4">
+        Theres an error, the page required wasn't found, please back to home
+        page
+      </p>
+      <img
+        src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHN6dXFleWU4eHl6ajN1ZzR3amZtMmNnZzR1OG5haWVmM3JlNGFoNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lNMyVfxjfzIJO/200.webp"
+        alt=""
+        class="w-full my-10"
+      />
+      <LinkButton title="Back to home" link={"/"} />
+    </div>
+  </main>
+</Layout>

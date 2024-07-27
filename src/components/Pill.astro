@@ -1,0 +1,22 @@
+---
+interface Props {
+  name?: string | any;
+}
+
+const { name } = Astro.props;
+---
+
+<span
+  class=`Pill px-3 py-2 text-sm font-light border border-transparent rounded-2xl`
+>
+  <span> {name} </span>
+</span>
+
+<style>
+  .Pill {
+    background:
+      linear-gradient(black, #111) padding-box,
+      linear-gradient(to right, rgba(39, 97, 221, 0.6), rgb(34, 184, 97, 0.8))
+        border-box;
+  }
+</style>
