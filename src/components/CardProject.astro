@@ -17,20 +17,33 @@ const { id, title, desc, skills, link, repository, imgUrl, date } = Astro.props;
 ---
 
 <div class="p-4 card col-span-1 h-fit border border-slate-500/20 rounded-xl">
-  <a href={link} class="relative w-full">
-    <span
-      class="absolute w-full py-2 text-xl font-semibold text-center text-white -z-10 top-1/3"
-    >
-      Take a Look
-    </span>
-    <img
-      src={imgUrl}
-      class="z-10 object-cover transition rounded-lg aspect-video hover:scale-110 hover:opacity-30 hover:blur-sm hover:-z-20"
-      alt="Project image"
-    />
-  </a>
+  {
+    link?.toString().length > 0 ? (
+      <a href={link} class="relative w-full">
+        <span class="absolute w-full py-2 text-xl font-semibold text-center text-white -z-10 top-1/3">
+          Take a Look
+        </span>
+        <img
+          src={imgUrl}
+          class="z-10 object-cover transition rounded-lg aspect-video hover:scale-110 hover:opacity-30 hover:blur-sm hover:-z-20"
+          alt="Project image"
+        />
+      </a>
+    ) : (
+      <div class="relative w-full">
+        <span class="absolute w-full py-2 text-xl font-semibold text-center text-white -z-10 top-1/3">
+          Link not available
+        </span>
+        <img
+          src={imgUrl}
+          class="z-10 object-cover transition rounded-lg aspect-video hover:scale-110 hover:opacity-30 hover:blur-sm hover:-z-20"
+          alt="Project image"
+        />
+      </div>
+    )
+  }
   <h5 class="my-5 text-lg font-semibold">{title}</h5>
-  <p class="text-sm font-light text-pretty opacity-80">
+  <p class="text-base font-light text-pretty opacity-80">
     {desc}
   </p>
   <div class="flex flex-wrap gap-3 mt-5">

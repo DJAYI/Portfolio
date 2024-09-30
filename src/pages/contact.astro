@@ -30,8 +30,8 @@ if (Astro.request.method === "POST") {
     async function main() {
       // send mail with defined transport object
       const info = await transporter.sendMail({
-        from: '"Danilo Arenas" <danilo.arenasyi@gmail.com>', // sender address
-        to: email.toString(), // list of receivers
+        from: "<Sender> " + email.toString(), // sender address
+        to: "danilo.arenasyi@gmail.com", // list of receivers
         subject: subject.toString(), // Subject line
         text: message.toString(), // plain text body // html body
       });
@@ -60,16 +60,20 @@ if (Astro.request.method === "POST") {
       </span>
 
       <div class="flex flex-wrap items-center justify-center gap-4 px-11">
-        <LinkIcon link="">
+        <LinkIcon link="https://github.com/DJAYI">
           <GitHubIcon />
         </LinkIcon>
-        <LinkIcon link="">
+        <LinkIcon
+          link="https://mail.google.com/mail/?view=cm&fs=1&to=danilo.arenasyi@gmail.com"
+        >
           <GmailIcon />
         </LinkIcon>
-        <LinkIcon link="">
+        <LinkIcon
+          link="https://www.linkedin.com/in/danilo-arenas-yi-b17058201/"
+        >
           <LinkedinIcon />
         </LinkIcon>
-        <LinkIcon link="">
+        <LinkIcon link="https://wa.me/573117837123">
           <WhatsAppIcon />
         </LinkIcon>
       </div>

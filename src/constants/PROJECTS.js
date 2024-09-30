@@ -4,7 +4,7 @@ export const PROJECTS_DATA = [
     title: 'Lorem Ipsum',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec ligula metus. Nam eget dui ultrices, pretium diam non, dictum nunc. Aenean et hendrerit enim. Sed congue lacinia ligula, vitae.',
     skills: ['Angular', 'Tailwind', 'Express'],
-    link: '',
+    link: 'https://www3.animeflv.net/anime/dr-stone-new-world',
     repository: '',
     imgUrl:
       'https://images.unsplash.com/photo-1720999127413-dd922893f04a?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -15,7 +15,7 @@ export const PROJECTS_DATA = [
     title: 'Lorem dolor',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec ligula metus. Nam eget dui ultrices, pretium diam non, dictum nunc. Aenean et hendrerit enim. Sed congue lacinia ligula, vitae. consectetur adipiscing elit. Mauris nec ligula metus. Nam eget dui ultrices, pretium diam non, dictum nunc. Aenean et hendrerit enim. Sed congue lacinia ligula, vitae.',
     skills: ['Angular', 'Tailwind', 'Express'],
-    link: '',
+    link: 'https://www3.animeflv.net/anime/dr-stone-new-world',
     repository: '',
     imgUrl:
       'https://images.unsplash.com/photo-1720999127413-dd922893f04a?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -26,7 +26,7 @@ export const PROJECTS_DATA = [
     title: 'Ipsum Amet',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     skills: ['Angular', 'Tailwind', 'Express'],
-    link: '',
+    link: 'https://www3.animeflv.net/anime/dr-stone-new-world',
     repository: '',
     imgUrl:
       'https://images.unsplash.com/photo-1720999127413-dd922893f04a?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
