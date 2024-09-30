@@ -2,7 +2,7 @@
 import { c as createComponent, r as renderTemplate, d as renderComponent, m as maybeRenderHead } from '../chunks/astro/server_Ch05GP6F.mjs';
 import 'kleur/colors';
 import { $ as $$LinkButton } from '../chunks/LinkButton_DSiXYRaa.mjs';
-import { $ as $$Layout } from '../chunks/Layout_B1MIHLTh.mjs';
+import { $ as $$Layout } from '../chunks/Layout_twOuC3-I.mjs';
 export { renderers } from '../renderers.mjs';
 
 const $$404 = createComponent(($$result, $$props, $$slots) => {
