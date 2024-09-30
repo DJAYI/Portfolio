@@ -5,6 +5,7 @@ interface Props {
   date_released: string;
   desc_position: string;
   link_enterprise?: string;
+  duration: string;
 }
 
 const {
@@ -13,6 +14,7 @@ const {
   date_released,
   desc_position,
   link_enterprise,
+  duration,
 } = Astro.props;
 ---
 
@@ -52,6 +54,8 @@ const {
   <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
     {desc_position}
   </p>
+  <span class="my-4 py-4 font-semibold block">Duration: {duration}</span>
+
   {
     link_enterprise?.length > 0 && (
       <a
@@ -62,4 +66,5 @@ const {
       </a>
     )
   }
+  <br />
 </li>

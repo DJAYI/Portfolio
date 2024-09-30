@@ -2,17 +2,19 @@ export const EXPERIENCE_DATA = [
   {
     enterprise_name: 'Freelancer',
     latest: true,
-    date_released: 'January 5th 2023',
+    date_released: 'Actually',
     desc_position:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur placerat erat a condimentum. Mauris a nulla lacinia, tincidunt velit eget, varius magna. Donec ut lectus in diam dapibus eleifend. Aenean nec maximus elit. Nam consequat massa sit amet imperdiet mollis. Phasellus vel efficitur massa. Maecenas nec quam eget ipsum condimentum sagittis eget bibendum ligula. Ut ultricies pellentesque placerat.',
-    link_enterprise: ''
+      'I have experience in both personal and business development projects, which has equipped me with the ability to work effectively in a team using clean practices for agile development. I excel in assertive communication and can easily adapt to any team’s workflow, ensuring collaboration and success in a dynamic environment.',
+    link_enterprise: '',
+    duration: '2 years'
   },
   {
-    enterprise_name: 'Elyon Yireh',
+    enterprise_name: 'Bolívar Government',
     latest: false,
-    date_released: 'January 5th 2023',
+    date_released: 'October 5th 2022',
     desc_position:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras consectetur placerat erat a condimentum. Mauris a nulla lacinia, tincidunt velit eget, varius magna. Donec ut lectus in diam dapibus eleifend. Aenean nec maximus elit. Nam consequat massa sit amet imperdiet mollis. Phasellus vel efficitur massa. Maecenas nec quam eget ipsum condimentum sagittis eget bibendum ligula. Ut ultricies pellentesque placerat.',
-    link_enterprise: 'https://elyonyireh.edu.co/'
+      'As a Software Development Intern, I assisted in gathering and organizing data from various sources, ensuring its quality and accuracy. I collaborated with development teams to create tools and applications that handle large volumes of data and participated in software testing to ensure proper data management. Additionally, I ensured that data handling complied with privacy and protection regulations, aligning the developed solutions with governance objectives and policies.',
+    link_enterprise: 'https://www.bolivar.gov.co/web/',
+    duration: '3 months'
   }
 ]
