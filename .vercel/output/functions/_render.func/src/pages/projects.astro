@@ -1,0 +1,24 @@
+---
+import Layout from "../layouts/Layout.astro";
+import CardProject from "../components/CardProject.astro";
+import { PROJECTS_DATA } from "../constants/PROJECTS";
+---
+
+<Layout title="DAYI | Projects">
+  <div class="grid max-w-6xl mt-10 mx-auto p-8 rounded-xl">
+    <main class="col-span-1 p-4">
+      <h3
+        class="text-3xl font-bold text-transparent font-Bungee bg-gradient-to-tr from-red-600 to-orange-500 bg-clip-text mb-4 t w-fit"
+      >
+        Projects
+      </h3>
+
+      <section
+        class="my-4 py-4 pe-4 overflow-y-auto scroll-smooth
+        max-h-[600px] gap-4 grid md:grid-cols-3 sm:grid-cols-1"
+      >
+        {PROJECTS_DATA.map((project) => <CardProject {...project} />)}
+      </section>
+    </main>
+  </div>
+</Layout>

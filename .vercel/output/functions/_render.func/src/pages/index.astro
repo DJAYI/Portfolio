@@ -1,0 +1,30 @@
+---
+import LinkButton from "../components/LinkButton.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="DAYI | Portfolio">
+  <main>
+    <section
+      class="grid items-center justify-center p-3 my-2 text-center gap-7"
+    >
+      <span
+        class="my-5 text-5xl text-transparent bg-gradient-to-r font-Bungee from-indigo-500 to-red-400 bg-clip-text"
+        >Danilo Arenas Yi</span
+      >
+      <img
+        loading="lazy"
+        decoding="async"
+        src="../../public/images/index-photo.webp"
+        class="w-[300px] mx-auto rounded-lg border border-gray-700 p-3 bg-transparent hover:rotate-2 hover:scale-110 transition object-cover -rotate-6"
+        alt="Danilo Arenas Yi photo"
+      />
+      <p class="w-[430px] mx-auto text-lg text-pretty">
+        Hey there! I'm Danilo Arenas Yi, a Junior Fullstack Developer. I'm your
+        go-to partner for creating tech applications that fit your needs
+        perfectly.
+      </p>
+      <LinkButton title="Take a Look 👉" link={"/projects"} />
+    </section>
+  </main>
+</Layout>
